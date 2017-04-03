@@ -24,7 +24,7 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<mainClass>pkgMain.Main</mainClass>
+					<mainClass>pkgPoker.app.MainApp</mainClass>
 					<nativeInstallers />
 				</configuration>
 			</plugin>
