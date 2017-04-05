@@ -101,6 +101,7 @@ public class PokerTableController implements Initializable {
 	public void GetGameState() {
 	}
 
+	//TODO: Lab #4 - Complete (fix) setiPlayerPosition
 	public void btnSitLeave_Click(ActionEvent event) {
 
 		// Set the PlayerPosition in the Player
@@ -154,6 +155,7 @@ public class PokerTableController implements Initializable {
 
 	}
 
+	//TODO: Lab #4 Complete the implementation
 	public void Handle_TableState(Table HubPokerTable) {
 
 	}
