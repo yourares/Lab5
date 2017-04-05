@@ -53,11 +53,13 @@ public class PokerHub extends Hub {
 			Action act = (Action) message;
 			switch (act.getAction()) {
 			case Sit:
+				//TODO: Lab #4 
 				//	Sit player at the table				
 				resetOutput();
 				sendToAll(HubPokerTable);
 				break;
 			case Leave:
+				//TODO: Lab #4 
 				//	Remove player from the table
 				resetOutput();
 				sendToAll(HubPokerTable);
