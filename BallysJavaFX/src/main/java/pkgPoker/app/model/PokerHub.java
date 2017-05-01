@@ -68,17 +68,23 @@ public class PokerHub extends Hub {
 				break;
 			case StartGame:
 				// Get the rule from the Action object.
+				resetOutput();
+				//eGame game = act.geteGame();
 				Rule rle = new Rule(act.geteGame());
-				
-				//TODO Lab #5 - If neither player has 'the button', pick a random player
-				//		and assign the button.				
-
-				//TODO Lab #5 - Start the new instance of GamePlay
-								
-				// Add Players to Game
-				
+				//Player firstDealer = HubPokerTable.PickRandomPlayerAtTable();
+				//System.out.println("Random Player: " + firstDealer.getiPlayerPosition());
+				//HubGamePlay = new GamePlay(rule, firstDealer.getPlayerID());				
+				//HubGamePlay.setGamePlayers(HubPokerTable.getHashPlayers());				
+				// Deck gameDeck = new Deck(rule.GetNumberOfJokers(),rule.GetWildCards());
+				//HubGamePlay.setGameDeck(gameDeck);
+				//int dealerPos = firstDealer.getiPlayerPosition();
+				//int[] playerOrder = GamePlay.GetOrder(dealerPos);
+				//HubGamePlay.setiActOrder(playerOrder);
+				//HubGamePlay.setPlayerNextToAct(HubGamePlay.getPlayerByPosition(HubGamePlay.NextPosition(dealerPos, playerOrder)));
 				// Set the order of players
 				
+				sendToAll(HubPokerTable);
+				break;
 
 
 			case Draw:
